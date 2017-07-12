@@ -19,7 +19,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 //    private static final String LOG_TAG = "MainActivity";
     private List<Photo> mphotos;
     private FlickrRecyclerViewAdapter flickrRecyclerViewAdapter;
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        activateToolbar();
 //
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
